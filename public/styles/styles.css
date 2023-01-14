@@ -13,8 +13,16 @@ body {
     list-style: none;
 }
 
-a {
+div.footer a {
     color: white;
+}
+
+div.navbar a {
+    color: white;
+}
+
+img {
+    width: 200px;
 }
 
 .th {
@@ -26,11 +34,70 @@ a {
 }
 
 .nlogo {
-    width: 300px;
+    width: 300px !important;
 }
 
 .flogo {
-    width: 150px;
+    width: 150px !important;
+}
+
+.panther-main {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panther-first {
+    background-color: #063C5e;
+    border: 10px solid #fccf14;
+    border-radius: 50px 50px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.black-panther{
+    width: 400px;
+    border-radius: 25px;
+    border: 5px solid white;
+    margin-left : 25%;
+}
+
+.title-panther {
+   color: #fccf14;
+   text-align: center;
+}
+
+.fsecond {
+    margin-right: 144px;
+}
+
+.panther-second {
+    margin-left: 50px;
+    border: 10px solid #fccf14;
+    border-top: 0;
+    border-radius: 0 0 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.description {
+    color: black;
+    font-size: large;
+    margin: 0;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stitle {
+    color: #063C5e;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.stitle1 {
+    font-style: italic;
 }
 
 .footer{
