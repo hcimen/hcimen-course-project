@@ -42,7 +42,7 @@ img {
 }
 
 .panther-main {
-    width: 80%;
+    width: 58%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -59,16 +59,14 @@ img {
     width: 400px;
     border-radius: 25px;
     border: 5px solid white;
-    margin-left : 25%;
+    margin-left : auto;
+    margin-right: auto;
+    display: block;
 }
 
 .title-panther {
    color: #fccf14;
    text-align: center;
-}
-
-.fsecond {
-    margin-right: 144px;
 }
 
 .panther-second {
@@ -83,11 +81,12 @@ img {
 
 .description {
     color: black;
-    font-size: large;
+    font-size: x-large;
     margin: 0;
     padding: 25px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 .stitle {
