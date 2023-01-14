@@ -42,7 +42,7 @@ img {
 }
 
 .panther-main {
-    width: 58%;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
 }
