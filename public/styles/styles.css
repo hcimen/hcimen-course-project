@@ -6,13 +6,36 @@ body {
 }
 
 .navbar {
- background-color: #103c5e ;
+ background-color: #063C5e ;
+}
+
+.list{
+    list-style: none;
 }
 
 a {
     color: white;
 }
 
-.logo {
+.th {
+    text-align: center;
+}
+
+.numberinput {
+    width: 24px;
+}
+
+.nlogo {
     width: 300px;
 }
+
+.flogo {
+    width: 150px;
+}
+
+.footer{
+    background-color: #063C5e ;
+    color: white;
+    border-top: 10px solid #fccf14;
+    padding-left: 10px;
+   }
