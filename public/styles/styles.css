@@ -80,6 +80,29 @@ img {
     width: 150px !important;
 }
 
+table, tr, td {
+    border: solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr:nth-child(odd){background-color: #c2c2c2;}
+
+button:nth-child(2n+2){background-color: red}
+
+table td:nth-child(3){background-color: red}
+
+button {
+    color: red;
+    align-self: center;
+}
+
+button[EDIT] {
+    color: yellowgreen;
+    align-self: center;
+}
+
 .panther-main {
     width: fit-content;
     margin-right: auto;
