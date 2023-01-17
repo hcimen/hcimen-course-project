@@ -10,21 +10,26 @@
 </head>
 <body>
 
-<div class="navbar">
 
-    <a href="index.html" target="_self"><img class="nlogo" src="public/images/CodeSquad-Comics-logo.png" alt=""></a>
+    <div class="navbar"> 
 
-    <ul class="list">
-        <a href="index.html"><li>HOME</li></a>
-        <a href="about.html"><li>ABOUT</li></a>
-        <a href="login.html"><li>LOGIN</li></a>
-    </ul>
-    <br>
+        <a href="index.html" target="_self"><img class="nlogo" src="public/images/CodeSquad-Comics-logo.png" alt=""></a>
+    
+        <ul class="list">
+            <div class="inline"> <a href="index.html"><li>HOME</li></a> </div>
+            <div class="inline"> <a href="about.html"><li>ABOUT</li></a> </div>
+            <div class="inline"> <a href="login.html"><li>LOGIN</li></a> </div>
+        </ul> 
+        <br>
+    
+    </div>
 
-</div>
 
+
+<div class="outside"> <br><br><br><br><br>
+    <div class="main-body">    
     <h1>UPDATE COMIC</h1>
-<form action="#">
+    <form class="createForm" action="#">
     <label for="title">Title: </label>
     <input type="text" id="title" value="title value stored in database"> <br> <br>
     
@@ -57,32 +62,40 @@
     <label for="synopsis">Synopsis: </label>
     <textarea name="synopsis" id="synopsis" cols="20" rows="2">synopsis value stored in database</textarea> <br><br><br>
 
-    <input type="submit" value="Submit">
 </form>
+
+<button type="submit" id="Submit" class="delete"> Submit </button>
+
+</div> <br><br><br><br><br>
+</div>
 
 <div class="footer" >
 
-    <h3>VISIT US</h3>
+    <div class="inline">
+        <h3>VISIT US</h3>  
+        <p>CodeSquad Comics <br>
+        123 Dorchester Avenue <br>
+        Boston, MA 02124</p>
+    </div>
 
-    <p>CodeSquad Comics <br>
-    123 Dorchester Avenue <br>
-    Boston, MA 02124</p>
+    <div class="inline"> 
+        <h3>LINKS</h3>
+        <a href="index.html" > Home</a> <br>
+        <a href="about.html"> About </a> <br>
+        <a href="login.html"> Login </a> <br> <br>
+    </div>
 
-    <h3>LINKS</h3>
+    <div class="inline">
+        <h3>FOLLOW US</h3>
+        <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer"> Facebook </a> <br>
+        <a href="#" rel="noopener noreferrer"> Instagram </a> <br>
+        <a href="#" rel="noopener noreferrer"> Twitter </a> <br> <br>
+    </div>
 
-    <a href="index.html" > Home</a> <br>
-    <a href="about.html"> About </a> <br>
-    <a href="login.html"> Login </a> <br> <br>
-
-    <h3>FOLLOW US</h3>
-
-    <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer"> Facebook </a> <br>
-    <a href="#" rel="noopener noreferrer"> Instagram </a> <br>
-    <a href="#" rel="noopener noreferrer"> Twitter </a> <br> <br>
-
-    <h3>A PRODUCT OF </h3>
-
-    <a href="http://codesquad.org" target="_blank" rel="noopener noreferrer"><img class="flogo" src="public/images/CodeSquad-logo-b.png" alt=""></a>
+    <div class="inline">
+        <h3>A PRODUCT OF </h3>
+        <a href="http://codesquad.org" target="_blank" rel="noopener noreferrer"><img class="flogo" src="public/images/CodeSquad-logo-b.png" alt=""></a>
+    </div>    
 </div>
 </body>
 </html>

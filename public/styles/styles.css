@@ -89,18 +89,40 @@ table, tr, td {
 
 table tr:nth-child(odd){background-color: #c2c2c2;}
 
-button:nth-child(2n+2){background-color: red}
+.edit {
+    background-color: #103c5e;
+    color: white;
+    text-align: center;
 
-table td:nth-child(3){background-color: red}
-
-button {
-    color: red;
-    align-self: center;
 }
 
-button[EDIT] {
-    color: yellowgreen;
-    align-self: center;
+.delete {
+    background-color: #fccf14;
+    color: #103c5e;
+}
+
+button {
+    color: darkblue;
+    display: block;
+    margin: auto;
+}
+
+.createForm {
+    text-align: right;
+    margin-right: 35%;
+}
+
+input, select, textarea, .numberinput{
+    width: 40% ;
+}
+
+#submit  {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#displayMore {
+    margin: 0;
 }
 
 .panther-main {
@@ -138,6 +160,7 @@ button[EDIT] {
     border-radius: 0 0 50px 50px;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 
