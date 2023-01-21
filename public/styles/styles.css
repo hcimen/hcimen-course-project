@@ -73,14 +73,15 @@ div.main-body a:active {
 }
 
 .main-body-inside {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: space-around;
     padding: 5%;
 }
 
 .mainBodyParts {
-    width: 25%;
+    max-width: 100%;
+    min-width: 22%;
 }
 
 #mainBodyPartsText {
