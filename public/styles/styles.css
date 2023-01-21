@@ -8,18 +8,22 @@ body {
 
 .navbar {
  background-color: #063C5e ;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-between;
 }
 
-.list{
-    list-style: none;
+.navbar-logo {
+    background-color: #063C5e
 }
 
 .inline {
-    display: inline-block;
-    width: 24%;
-    margin: 0;
-    vertical-align: top;
-}
+    width:50%;
+    display: flex;
+    justify-content:space-evenly   ;
+    align-items: center;
+    flex-wrap: wrap;
+    }
 
 div.inline h3 {
     color: #fccf14;
@@ -185,9 +189,20 @@ input, select, textarea, .numberinput{
 }
 
 .footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #063C5e ;
     color: white;
     border-top: 10px solid #fccf14;
     padding-left: 10px;
     text-align: justify;
    }
+
+   .inline-footer {
+    width:auto;
+    }
+
+    div.inline-footer h3 {
+        color: #fccf14;
+    }
