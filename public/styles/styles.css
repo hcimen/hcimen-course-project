@@ -45,6 +45,22 @@ a:active {
     background-color: yellow;
 }
 
+div.main-body a:link, div.main-body a:visited {
+    color: #063C5e;
+    text-decoration: none;
+}
+
+div.main-body a:hover {
+    color: teal;
+    font-weight: bold;
+}
+
+div.main-body a:active {
+    color: blue;
+    font-weight: bold;
+    background-color: yellow;
+}
+
 .main-body {
     width: 80%;
     margin-left: auto;
@@ -52,7 +68,25 @@ a:active {
     background-color: white;
     border: #063C5e solid 5px;
     padding: 2%;
+}
 
+.main-body-inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 5%;
+}
+
+div.mainBodyParts p {
+   
+}
+
+.mainBodyParts {
+    width: 25%;
+}
+
+#mainBodyPartsText {
+    text-align: center;
 }
 
 .outside {
@@ -64,8 +98,19 @@ div.main-body h1, h2 {
     text-align: center;
 }
 
+div.main-body span {
+    text-align: center;
+}
+
 img {
     width: 200px;
+}
+
+div.mainBodyParts img {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    display: block;
 }
 
 .th {
@@ -126,7 +171,7 @@ input, select, textarea, .numberinput{
 }
 
 #displayMore {
-    margin: 0;
+    margin: auto;
 }
 
 .panther-main {
@@ -205,4 +250,9 @@ input, select, textarea, .numberinput{
 
     div.inline-footer h3 {
         color: #fccf14;
+    }
+
+    div.outside ul {
+        padding-left: 40%;
+
     }
