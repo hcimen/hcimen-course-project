@@ -252,7 +252,14 @@ input, select, textarea, .numberinput{
 
    .inline-footer {
     width:auto;
+    display: inline;
     }
+
+.awesome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
     div.inline-footer h3 {
         color: var(--yellow);
