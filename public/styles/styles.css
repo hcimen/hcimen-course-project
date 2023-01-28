@@ -75,7 +75,7 @@ div.main-body a:active {
     margin-right: auto;
     background-color: white;
     border: var(--darkblue) solid 5px;
-    padding: 2%;
+    padding: 2%;d
 }
 
 .main-body-inside {
@@ -168,6 +168,7 @@ button {
 
 input, select, textarea, .numberinput{
     width: 40% ;
+    box-sizing: border-box;
 }
 
 #submit  {
@@ -269,3 +270,42 @@ input, select, textarea, .numberinput{
         padding-left: 40%;
 
     }
+
+    /* .secondary-body {
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: red;
+      } */
+
+      /* input {
+        width: 80%;
+      } */
+
+
+
+      label {
+        display: inline;
+        text-align: left;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 720px) { 
+        .responsive-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 0;
+            flex-wrap:wrap;
+            
+        }
+
+        input, select, textarea, .numberinput{
+            width: 100% ;
+        }
+
+        .createForm {
+            text-align: right;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+

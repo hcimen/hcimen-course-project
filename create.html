@@ -29,6 +29,7 @@
     <h1>CREATE NEW COMIC</h1>
     
     <form class="createForm" action="#">
+    <div class="responsive-form">
     <label for="title">Title: </label>
     <input type="text" name="title" id="title" placeholder="Title"> <br> <br>
     
@@ -58,8 +59,9 @@
     <label for="rating">Rating: </label>
     <input class="numberinput" type="number" name="rating" id="rating" value=""> <br> <br>
 
-    <label for="synopsis">Synopsis: </label>
+    <label for="synopsis" style="vertical-align: top;">Synopsis: </label>
     <textarea name="synopsis" id="synopsis" cols="20" rows="10" placeholder="Synopsis"></textarea> <br><br><br>
+    </div>
 </form>
 <button type="submit" class="delete" id="submit"> Submit </button>
 
