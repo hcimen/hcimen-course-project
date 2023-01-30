@@ -37,6 +37,30 @@ div.inline h3 {
     color: var(--yellow)
 }
 
+.hamburger {
+    display: none;
+    padding: 5%;
+    position: relative;
+}
+
+.inline-content{
+    display: none;
+    position: absolute;
+    color: var(--yellow);
+    margin-left: -110%;
+    margin-top: -55%;
+    z-index: 1;
+}
+
+.hamburger:hover .inline-content {
+    display: block;
+    color: #fccf14;
+  }
+
+.inline-content a:hover {
+    background-color: var(--darkblue)
+}
+
 a:link, a:visited {
     color: white;
     text-decoration: none;
@@ -52,6 +76,7 @@ a:active {
     font-weight: bold;
     background-color: yellow;
 }
+
 
 div.main-body a:link, div.main-body a:visited {
     color: var(--darkblue);
@@ -309,3 +334,11 @@ input, select, textarea, .numberinput{
             margin-left: 10%;
         }
 
+    @media screen and (max-width: 768px) { 
+        .inline {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
