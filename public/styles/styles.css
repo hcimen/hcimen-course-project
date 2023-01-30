@@ -26,12 +26,12 @@ body {
 }
 
 .inline {
-    width:25%;
+    width:40%;
     display: flex;
     justify-content:space-evenly   ;
     align-items: center;
     flex-wrap: wrap;
-    }
+}
 
 div.inline h3 {
     color: var(--yellow)
@@ -156,7 +156,7 @@ div.mainBodyParts img {
 }
 
 .flogo {
-    width: 150px !important;
+    /* width: 150px !important; */
 }
 
 table, tr, td {
@@ -274,71 +274,86 @@ input, select, textarea, .numberinput{
     padding-left: 10px;
     text-align: justify;
     font-family: 'Fredericka the Great';
-   }
-
-   .inline-footer {
-    width:auto;
-    display: inline;
-    }
-
-.awesome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-    div.inline-footer h3 {
-        color: var(--yellow);
+.inline-footer {
+    width:auto;
+    display: inline;
+}
+
+.awesome {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+div.inline-footer h3 {
+    color: var(--yellow);
+}
+
+div.outside ul {
+    padding-left: 40%;
+
+}
+
+
+label {
+display: inline;
+text-align: left;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) { 
+    .responsive-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+        flex-wrap:wrap;
+        
     }
 
-    div.outside ul {
-        padding-left: 40%;
-
+    input, select, textarea, .numberinput{
+        width: 100% ;
     }
 
-    /* .secondary-body {
-        display: flexbox;
-        flex-wrap: wrap;
-        flex-direction: row;
-        color: red;
-      } */
+    .createForm {
+        text-align: right;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
 
-      /* input {
-        width: 80%;
-      } */
+@media screen and (max-width: 768px) { 
+    body{
+        font-size: 2rem;
+    }
 
+    .inline {
+        display: none;
+    }
 
+    .hamburger {
+        display: block;
+    }
 
-      label {
-        display: inline;
-        text-align: left;
-      }
+    .inline-footer {
+        width: 100%;
+        margin-right: 40%;
+        font-size: 1.8rem;
+    }
 
-      @media screen and (min-width: 480px) and (max-width: 720px) { 
-        .responsive-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: 0;
-            flex-wrap:wrap;
-            
-        }
+    .awesome{
+        width: 40%;
+        justify-content: space-between;
+    }
 
-        input, select, textarea, .numberinput{
-            width: 100% ;
-        }
+    .footer{
+        justify-content: flex-start;
+        padding-left: 5%;        
+    }
+}
 
-        .createForm {
-            text-align: right;
-            margin-right: 10%;
-            margin-left: 10%;
-        }
-
-    @media screen and (max-width: 768px) { 
-        .inline {
-            display: none;
-        }
-
-        .hamburger {
-            display: block;
-        }
+@media screen and (max-width: 768px) { 
+    {
+        font-size: 2rem;
+    }
