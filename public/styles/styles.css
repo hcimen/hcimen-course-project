@@ -353,7 +353,7 @@ text-align: left;
     }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (min-width: 1024px) { 
     {
         font-size: 2rem;
     }
