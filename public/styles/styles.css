@@ -34,7 +34,7 @@ body {
 }
 
 div.inline h3 {
-    color: var(--yellow)
+    color: var(--yellow);
 }
 
 .hamburger {
@@ -58,7 +58,7 @@ div.inline h3 {
   }
 
 .inline-content a:hover {
-    background-color: var(--darkblue)
+    background-color: var(--darkblue);
 }
 
 a:link, a:visited {
@@ -184,11 +184,15 @@ button {
     color: darkblue;
     display: block;
     margin: auto;
+    min-width: 20%;
+    width: auto;
+    height: auto;
+    font-size: inherit;
 }
 
 .createForm {
     text-align: right;
-    margin-right: 35%;
+    margin-right: 15%;
 }
 
 input, select, textarea, .numberinput{
@@ -207,13 +211,15 @@ input, select, textarea, .numberinput{
 
 .panther-main {
     width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .panther-first {
-    background-color: var(--darkblue)
-    border: 10px solid var(--yellow)
+    background-color: var(--darkblue);
+    border: 10px solid var(--yellow);
     border-radius: 50px 50px 0 0;
     margin-left: auto;
     margin-right: auto;
@@ -255,7 +261,7 @@ input, select, textarea, .numberinput{
 }
 
 .stitle {
-    color: var(--darkblue)
+    color: var(--darkblue);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -282,9 +288,9 @@ input, select, textarea, .numberinput{
 }
 
 .awesome {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 div.inline-footer h3 {
@@ -296,7 +302,6 @@ div.outside ul {
 
 }
 
-
 label {
 display: inline;
 text-align: left;
@@ -307,23 +312,22 @@ text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 0;
+        padding: 5%;
         flex-wrap:wrap;
-        
     }
 
     input, select, textarea, .numberinput{
-        width: 100% ;
+        width: 90% ;
+        height: 48px;
+        font-size: 2rem;
     }
 
     .createForm {
         text-align: right;
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 0%;
+        margin-left: 0%;
     }
-}
 
-@media screen and (max-width: 768px) { 
     body{
         font-size: 2rem;
     }
@@ -351,9 +355,102 @@ text-align: left;
         justify-content: flex-start;
         padding-left: 5%;        
     }
+
+    #scrollbar{
+        overflow-x: auto;
+        width: 80%;
+        white-space: nowrap;
+    }
 }
 
-@media screen and (min-width: 1024px) { 
-    {
-        font-size: 2rem;
+@media screen and (min-width: 768px) { 
+    body{
+        font-size: 2.2rem;
+    }
+
+    input, select, textarea, .numberinput{
+        min-width: 40% ;
+        height: 60px;
+        font-size: 2.2rem;
+    }
+
+    .inline-footer {
+        width: 45%;
+        font-size: 2.0rem;
+    }
+
+    .awesome{
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .footer{
+        justify-content: flex-start;
+        padding-left: 5%;        
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    body{
+        font-size: 2.5rem;
+    }
+
+    .panther-main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .panther-first {
+        background-color: var(--darkblue);
+        border: 10px solid var(--yellow);
+        border-right: 0px;
+        border-radius: 50px 0 0 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline !important;
+        align-content: space-around;
+        min-width: 55%;
+    }
+
+    .panther-title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div.fsecond img {
+        width: 70%;
+    }
+
+    .panther-second {
+        border: 10px solid var(--yellow);
+        border-left: 0;
+        border-radius: 0 50px 50px 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+    input, select, textarea, .numberinput{
+        min-width: 50% ;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+
+    .inline-footer {
+        min-width: fit-content;
+        width: 20%;
+        font-size: 2.2rem;
+    }
+
+    .awesome{
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .footer{
+        justify-content: space-around;
+        padding-left: 5%;        
     }
