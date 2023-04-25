@@ -10,7 +10,6 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 app.get('/', (req, res) => {
   res.render ('pages/index');
 });
@@ -24,11 +23,23 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/admin-console', (req, res) => {
-  res.render ('pages/admin-console');
+  res.render ('pages/admin');
 });
 
 app.get('/admin-console/create-book', (req, res) => {
-  res.render ('pages/admin-console/create-book');
+  res.render ('pages/create');
+});
+
+app.get('/book', (req, res) => {
+  res.render ('pages/book');
+});
+
+app.get('/create', (req, res) => {
+  res.render ('pages/create');
+});
+
+app.get('/update', (req, res) => {
+  res.render ('pages/update');
 });
 
 const port = 3000; 
