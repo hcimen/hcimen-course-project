@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.75">
-    <link href='//fonts.googleapis.com/css?family=Open Sans|Fredericka the Great' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-    <script src="https://kit.fontawesome.com/1f172719e9.js" crossorigin="anonymous"></script>
-    <title>Login</title>
-</head>
-<body>
+<%- include('../partials/head') -%> 
 
-    <div class="navbar"> 
-        <div class="navbar-logo">
-            <a href="index.html" target="_self"><img class="nlogo" src="/images/CodeSquad-Comics-logo.png" alt=""></a>
-        </div>
-    
-        <div class="inline">
-            <div class="inline1"> <a href="index.html"> HOME </a> </div>
-            <div class="inline2"> <a href="about.html"> ABOUT </a> </div>
-            <div class="inline3"> <a href="login.html"> LOGIN </a> </div>
-        </div>
-        
-        <div class="hamburger">
-            <a href="#" rel="noopener noreferrer"> <i class="fa-sharp fa-solid fa-bars fa-xl fa-spin" style="--fa-animation-duration: 15s"></i> </a>
-                <div class="inline-content">
-                    <div class="inline1"> <a href="index.html"> HOME </a> </div>
-                    <div class="inline2"> <a href="about.html"> ABOUT </a> </div>
-                    <div class="inline3"> <a href="login.html"> LOGIN </a> </div>
-                </div>
-        </div>
-     
-    </div> 
+<%- include('../partials/nav') -%> 
+
     
 <div class="outside"> <br><br><br><br><br>
     <div class="main-body">
@@ -50,35 +20,4 @@
 </div>
 
 
-<div class="footer" >
-
-    <div class="inline-footer">
-        <h3>VISIT US</h3>  
-        <p>CodeSquad Comics <br>
-        123 Dorchester Avenue <br>
-        Boston, MA 02124</p>
-    </div>
-
-    <div class="inline-footer"> 
-        <h3>LINKS</h3>
-        <a href="index.html" > Home</a> <br>
-        <a href="about.html"> About </a> <br>
-        <a href="login.html"> Login </a> <br> <br>
-    </div>
-
-    <div class="inline-footer">
-        <h3>FOLLOW US</h3>
-        <div class="awesome">
-        <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-facebook"></i>
-        <a href="#" rel="noopener noreferrer"> <i class="fa-brands fa-instagram"></i> </a>
-        <a href="#" rel="noopener noreferrer"> <i class="fa-brands fa-twitter"></i> </a>
-        </div>
-    </div>
-
-    <div class="inline-footer">
-        <h3>A PRODUCT OF </h3>
-        <a href="http://codesquad.org" target="_blank" rel="noopener noreferrer"><img class="flogo" src="/images/CodeSquad-logo-b.png" alt=""></a>
-    </div>    
-</div>
-</body>
-</html>
+<%- include('../partials/footer') -%> 
