@@ -30,7 +30,7 @@ app.get('/admin-console/create-book', (req, res) => {
   res.render ('pages/create');
 });
 
-app.get('/book', (req, res) => {
+app.get('/books/:id', (req, res) => {
   res.render ('pages/book');
 });
 
@@ -38,7 +38,7 @@ app.get('/create', (req, res) => {
   res.render ('pages/create');
 });
 
-app.get('/update', (req, res) => {
+app.get('/admin-console/update-book/:id', (req, res) => {
   res.render ('pages/update');
 });
 
