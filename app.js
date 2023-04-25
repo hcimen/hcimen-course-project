@@ -1,31 +1,38 @@
 const express = require('express');
 const morgan = require('morgan');
+const path = require('node:path');
 
 const app = express();
-const port = 3000; 
 
 app.use(morgan('dev'));
 
+app.set('view engine', 'ejs');
+
+
+// app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
-  res.send('This route points to the Home page');
+  res.render ('pages/index');
 });
 
 app.get('/about', (req, res) => {
-  res.send('This route points to the About page');
+  res.render ('pages/about');
 });
 
 app.get('/login', (req, res) => {
-  res.send('This route points to the Login page');
+  res.render ('pages/login');
 });
 
 app.get('/admin-console', (req, res) => {
-  res.send('This route points to the Admin Console page');
+  res.render ('pages/admin-console');
 });
 
 app.get('/admin-console/create-book', (req, res) => {
-  res.send('This route points to the Create page');
+  res.render ('pages/admin-console/create-book');
 });
 
+const port = 3000; 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
+
